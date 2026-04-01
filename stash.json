@@ -1,0 +1,45 @@
+{
+  "years": [
+    "2026"
+  ],
+  "data": {
+    "2026": {
+      "Machine Learning": [
+        {
+          "image": "screenshots/2026/67A678E1-FE2A-4ED6-82D6-7A9AF53530F3.jpg",
+          "url": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
+          "title": "Neural Networks: Zero to Hero",
+          "favicon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=32",
+          "w": 2048,
+          "h": 1837
+        },
+        {
+          "image": "screenshots/2026/826736B5-A3F7-46A9-A37B-311F9F8F6006.jpg",
+          "url": "https://www.youtube.com/watch?v=w8yWXqWQYmU&t=10s",
+          "title": "Building a neural network FROM SCRATCH (no Tensorflow/Pytorch, just numpy & math)",
+          "favicon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=32",
+          "w": 1318,
+          "h": 1874
+        }
+      ],
+      "Maths": [
+        {
+          "image": "screenshots/2026/Screenshot%202026-03-31%20at%201.06.11%E2%80%AFPM.png",
+          "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+          "title": "Essence of linear algebra",
+          "favicon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=32",
+          "w": 2276,
+          "h": 1566
+        },
+        {
+          "image": "screenshots/2026/Screenshot%202026-03-31%20at%206.24.36%E2%80%AFPM.png",
+          "url": "https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science",
+          "title": "Mathematics for Machine Learning and Data Science",
+          "favicon": "https://www.google.com/s2/favicons?domain=www.coursera.org&sz=32",
+          "w": 2276,
+          "h": 1566
+        }
+      ]
+    }
+  }
+}
