@@ -877,6 +877,112 @@
           "w": 1776,
           "h": 482
         }
+      ],
+      "Things to Buy": [
+        {
+          "image": "screenshots/2025/1023864.webp",
+          "url": "https://classicdecks.com/products/hoyle-clear-waterproof-playing-cards-red-indices",
+          "title": "https://classicdecks.com/products/hoyle-clear-waterproof-playing-cards-red-indices",
+          "favicon": "https://www.google.com/s2/favicons?domain=classicdecks.com&sz=32",
+          "w": 1000,
+          "h": 1000
+        },
+        {
+          "image": "screenshots/2025/130015678-bicycle-waterproof-00__98739.webp",
+          "url": "https://classicdecks.com/products/bicycle-waterproof-playing-cards-clear-plastic-with-protective-case",
+          "title": "https://classicdecks.com/products/bicycle-waterproof-playing-cards-clear-plastic-with-protective-case",
+          "favicon": "https://www.google.com/s2/favicons?domain=classicdecks.com&sz=32",
+          "w": 1200,
+          "h": 1200
+        },
+        {
+          "image": "screenshots/2025/511noB55PuL._SL1500_.jpg",
+          "url": "https://www.amazon.in/dp/B008LQOZ2E/?coliid=I2E56GFVKKWMFM&colid=1LS154B3SDH1C&th=1",
+          "title": "https://www.amazon.in/dp/B008LQOZ2E/?coliid=I2E56GFVKKWMFM&colid=1LS154B3SDH1C&th=1",
+          "favicon": "https://www.google.com/s2/favicons?domain=www.amazon.in&sz=32",
+          "w": 1500,
+          "h": 1500
+        },
+        {
+          "image": "screenshots/2025/51FeeXHe1nL._SX679_.jpg",
+          "url": "https://amzn.in/d/04OOPtaW",
+          "title": "https://amzn.in/d/04OOPtaW",
+          "favicon": "https://www.google.com/s2/favicons?domain=amzn.in&sz=32",
+          "w": 679,
+          "h": 679
+        },
+        {
+          "image": "screenshots/2025/51mSKOmkmgL.jpg",
+          "url": "https://amzn.in/d/07zVAStD",
+          "title": "https://amzn.in/d/07zVAStD",
+          "favicon": "https://www.google.com/s2/favicons?domain=amzn.in&sz=32",
+          "w": 1500,
+          "h": 1500
+        },
+        {
+          "image": "screenshots/2025/61uoP1zJoLL._AC_UF1000%2C1000_QL80_.jpg",
+          "url": "https://amzn.in/d/09ShWcY0",
+          "title": "https://amzn.in/d/09ShWcY0",
+          "favicon": "https://www.google.com/s2/favicons?domain=amzn.in&sz=32",
+          "w": 908,
+          "h": 1000
+        },
+        {
+          "image": "screenshots/2025/71ho-CHjy%2BL._AC_UF894%2C1000_QL80_.jpg",
+          "url": "https://amzn.in/d/0iJ8Oiyr",
+          "title": "https://amzn.in/d/0iJ8Oiyr",
+          "favicon": "https://www.google.com/s2/favicons?domain=amzn.in&sz=32",
+          "w": 894,
+          "h": 894
+        },
+        {
+          "image": "screenshots/2025/81JkEmp-ZCL.jpg",
+          "url": "https://classicdecks.com/products/hoyle-blue-waterproof-playing-cards",
+          "title": "https://classicdecks.com/products/hoyle-blue-waterproof-playing-cards",
+          "favicon": "https://www.google.com/s2/favicons?domain=classicdecks.com&sz=32",
+          "w": 2560,
+          "h": 2560
+        },
+        {
+          "image": "screenshots/2025/Xteink%20X4.png",
+          "url": "https://www.xteink.com/products/xteink-x4",
+          "title": "https://www.xteink.com/products/xteink-x4",
+          "favicon": "https://www.google.com/s2/favicons?domain=www.xteink.com&sz=32",
+          "w": 707,
+          "h": 1000
+        },
+        {
+          "image": "screenshots/2025/casio.avif",
+          "url": "https://amzn.in/d/0ayWjP8t",
+          "title": "https://amzn.in/d/0ayWjP8t",
+          "favicon": "https://www.google.com/s2/favicons?domain=amzn.in&sz=32",
+          "w": 1200,
+          "h": 1440
+        },
+        {
+          "image": "screenshots/2025/nokia-2660_Flip-black-emotional-int.png",
+          "url": "https://amzn.in/d/03xmCOLb",
+          "title": "https://amzn.in/d/03xmCOLb",
+          "favicon": "https://www.google.com/s2/favicons?domain=amzn.in&sz=32",
+          "w": 2498,
+          "h": 4000
+        },
+        {
+          "image": "screenshots/2025/nokia106.jpg",
+          "url": "https://amzn.in/d/0hXjIxyu",
+          "title": "https://amzn.in/d/0hXjIxyu",
+          "favicon": "https://www.google.com/s2/favicons?domain=amzn.in&sz=32",
+          "w": 950,
+          "h": 2000
+        },
+        {
+          "image": "screenshots/2025/wkx03hfwdz55xmxkejopjhlzhozjot919397.avif",
+          "url": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadt/thinkpad-t480/22tp2tt4800",
+          "title": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadt/thinkpad-t480/22tp2tt4800",
+          "favicon": "https://www.google.com/s2/favicons?domain=www.lenovo.com&sz=32",
+          "w": 725,
+          "h": 515
+        }
       ]
     }
   }
