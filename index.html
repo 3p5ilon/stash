@@ -232,56 +232,59 @@
       return [Math.min(dw, maxW - 10), dh];
     }
 
-    // stable container height — same every time for same images
-    function calcHeight(pairs, sw) {
-      const cols = Math.max(1, Math.floor(sw / 260));
-      const colH = new Array(cols).fill(0);
-      pairs.forEach(([w, h]) => {
-        const i = colH.indexOf(Math.min(...colH));
-        colH[i] += h + 12;
-      });
-      return Math.max(...colH) + 20;
-    }
-
     function scatter(entries, containerEl) {
       const sw = containerEl.getBoundingClientRect().width;
       const pairs = entries.map(({ w, h }) => displaySize(w, h, sw));
 
-      // fixed height — never changes on refresh
-      const H = calcHeight(pairs, sw);
-      containerEl.style.height = H + "px";
+      // smart starting height — scales with actual content, not a fixed 600.
+      // few images get a small container, many images grow naturally.
+      const totalArea = pairs.reduce((sum, [w, h]) => sum + w * h, 0);
+      const tallest = Math.max(...pairs.map(([, h]) => h));
+      const startHeight = Math.max(
+        tallest + 20,
+        Math.sqrt(totalArea * (sw / 900)),
+      );
 
       let pos = [];
 
       entries.forEach((bm, i) => {
+        let H = startHeight;
         const [w, h] = pairs[i];
-        let attempts = 0;
 
+        // same packing approach as vibes: 50 random attempts, then grow by 50px
         outer: while (true) {
-          attempts++;
-          const al = Math.random() * (sw - w);
-          const at = Math.random() * (H - h);
-          let hit = false;
+          for (let attempt = 0; attempt < 50; attempt++) {
+            const al = Math.random() * (sw - w);
+            const at = Math.random() * (H - h);
+            let hit = false;
 
-          for (let j = 0; j < pos.length; j++) {
-            const [bl, bt] = pos[j];
-            if (
-              al < bl + pairs[j][0] &&
-              al + w > bl &&
-              at < bt + pairs[j][1] &&
-              at + h > bt
-            ) {
-              hit = true;
-              break;
+            for (let j = 0; j < pos.length; j++) {
+              const [bl, bt] = pos[j];
+              if (
+                al < bl + pairs[j][0] &&
+                al + w > bl &&
+                at < bt + pairs[j][1] &&
+                at + h > bt
+              ) {
+                hit = true;
+                break;
+              }
+            }
+
+            if (!hit) {
+              pos.push([parseInt(al), parseInt(at)]);
+              break outer;
             }
           }
-
-          if (!hit || attempts > 300) {
-            pos.push([parseInt(al), parseInt(at)]);
-            break outer;
-          }
+          H += 50;
         }
+      });
 
+      // container height = exactly as tall as the placed images require
+      const maxBottom = Math.max(...pos.map(([, t], i) => t + pairs[i][1]));
+      containerEl.style.height = maxBottom + 20 + "px";
+
+      entries.forEach((bm, i) => {
         const [left, top] = pos[i];
         const [pw, ph] = pairs[i];
 
